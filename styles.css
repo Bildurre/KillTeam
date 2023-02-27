@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.card {
+  border: 1px solid black;
+  width: 2.5in;
+  height: 3.5in;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(223, 221, 221);
+}
+
+.header {
+  margin-top: 0.133in;
+  margin-bottom: 0.133in;
+  display:flex;
+  height: 0.6in;
+}
+
+h1 {
+  padding-left: 10px;
+  padding-right: 0.5in;
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  width: 50%;
+  font-size: 0.7em;
+  font-weight: 800;
+  background-color: rgb(133, 130, 130);
+  z-index: 0;
+}
+.picture {
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: calc(0.75in - 1px);
+  z-index: 0;
+  background-color: orange;
+  clip-path: polygon(0% 0%, 50% 100%, 100% 0%);
+  width: 1in;
+  height: 0.866in;
+}
+
+.stats {
+  width: 50%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  clip-path: polygon(33.4% 0%, 100% 0%, 66.6% 100%, 0% 100%);
+}
+
+.statsRow {
+  height: 25%;
+}
+
+.statsOrange {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: orangered;
+}
+
+.statsGrey {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.statsOrangeTop {
+  padding-left: 29%;
+  padding-right: 8%;
+}
+
+.statsOrangeBot {
+  padding-left: 15%;
+  padding-right: 23%;
+}
+
+.statsGreyTop {
+  padding-left: 29%;
+  padding-right: 8%;
+}
+
+.statsGreyBot {
+  padding-left: 15%;
+  padding-right: 23%;
+}
+.statsOrange > p {
+  flex:1;
+  display: flex;
+  justify-content: center;
+  font-size: 0.5em;
+  font-weight: 600;
+}
+
+.statsGrey > p {
+  flex:1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th {
+  font-size: 0.5em;
+  font-weight: 800;
+  padding: 1px 2px 1px 2px;
+}
+
+td{ 
+  font-size: 0.5em;
+  padding: 1px 2px 1px 2px;
+}
+
+.weaponName {
+  width: 30%;
+  text-align: left;
+}
+
+.weaponAttack, .weaponDamage, .weaponAbility {
+  width: 10%;
+  text-align: center;
+}
+
+.weaponSpecial {
+  width: 20%;
+  text-align: left;
+  display: flex;
+}
+
+.weaponCrit {
+  width: 20%;
+  text-align: right;
+}
+
+.tableTitle {
+  background-color: rgb(99, 98, 98);
+}
+
+.tableGrey {
+  background-color: rgb(133, 130, 130);;
+}
+
+.circle {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  border: 1px solid black;
+  background-color: white;
+}
+
+.square {
+  display: block;
+  min-width: 8px;
+  height: 8px;
+  border: 1px solid black;
+  background-color: blue;
+}
+
+.abilities > div {
+  background-color: rgb(99, 98, 98);
+  font-weight: 800;
+  padding: 0 1px 0 1px;
+}
+
+.abilities {
+  margin-top: 10px;
+  font-size: 0.5em;
+}
+
+.abilities > p {
+  padding: 0 1px 0 1px;
+}
