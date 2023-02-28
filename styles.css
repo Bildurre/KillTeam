@@ -1,9 +1,19 @@
+@font-face {
+  font-family: pragatiBold;
+  src: url(fonts/PragatiNarrow-Bold.otf);
+}
+@font-face {
+  font-family: pragatiRegular;
+  src: url(fonts/PragatiNarrow-Regular.otf);
+}
+
 * {
   box-sizing: border-box;
   border: 0;
   padding: 0;
   margin: 0;
-  font-family: sans-serif;
+  font-family: pragatiRegular;
+  line-height: 105%;
 }
 
 body {
@@ -18,45 +28,48 @@ body {
   height: 3.5in;
   display: flex;
   flex-direction: column;
-  background-color: rgb(247, 245, 245);
+  background-color: white;
+  flex-shrink: 0;
 }
 
 .header {
-  margin-top: 0.133in;
-  margin-bottom: 0.133in;
   display:flex;
   height: 0.6in;
 }
 
-h1 {
-  padding-left: 5px;
-  padding-right: 0.5in;
+.header h1 {
+  padding-left: 10px;
+  padding-right: 0.2in;
   display: flex;
   justify-content:flex-start;
   align-items: center;
   width: 50%;
-  font-size: 0.8em;
-  font-weight: 800;
+  font-size: 1em;
+  font-family: pragatiBold;
   background-color: rgb(92, 75, 65);
   color: white;
   z-index: 0;
+  flex:1 0 auto;
 }
 .picture {
   display: block;
-  position: fixed;
+  position: absolute;
   z-index: 0;
   background-color: rgb(255, 145, 0);
-  clip-path: polygon(30% 0%, 50% 100%, 70% 0%);
+  clip-path: polygon(calc(1.25in - 1px) 0.60622in, 0.9in 0in, 1.6in 0in);
   width: 2.5in;
-  height: 0.866in;
+  height: 0.60622in;
 }
 
 .stats {
+
+  margin-top: 0.05in;
   width: 50%;
-  flex: 1;
+  flex-shrink: 0;
   display: flex;
   flex-direction: column;
-  clip-path: polygon(33.4% 0%, 100% 0%, 66.6% 100%, 0% 100%);
+  clip-path: polygon(26.6% 0%, 100% 0%, 73.4% 100%, 0% 100%);
+
 }
 
 .statsRow {
@@ -99,8 +112,9 @@ h1 {
   flex:1;
   display: flex;
   justify-content: center;
-  font-size: 0.7em;
-  font-weight: 800;
+  font-size: 0.75em;
+  font-family: pragatiBold;
+  margin: 1px 0 1px 0;
 }
 
 .statsGrey > p {
@@ -108,8 +122,9 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 0.80em;
-  font-weight: 600;
+  font-size: 0.85em;
+  font-family: pragatiBold;
+  margin: 1px 0 1px 0;
 }
 .weapons {
   display: flex;
@@ -119,23 +134,28 @@ h1 {
   padding: 1px;
   display: flex;
   align-items: center;
-  font-size: 0.72em;
+  font-size: 0.68em;
+}
+.tableTitle {
+  border-top:solid orangered 1px;
+  font-size: 0.7em;
+  background-color: rgb(161, 158, 158);
 }
 
-.tableTitle {
-  font-size: 0.8em;
-  font-weight: 600;
-  background-color: rgb(161, 158, 158);
+.tableTitle > div {
+  font-family: pragatiBold;
 }
 
 .weaponName {
   flex:1 0 36%;
   text-align: left;
+  padding-right: 1px;
 }
 
 .weaponAttack, .weaponDamage, .weaponAbility {
   flex:1 0 8%;
   text-align: center;
+  padding-right: 1px;
 }
 
 .weaponSpecial {
@@ -143,6 +163,7 @@ h1 {
   text-align: left;
   display: flex;
   align-items: center;
+  padding-right: 1px;
 }
 
 .weaponCrit {
@@ -155,7 +176,7 @@ h1 {
 }
 
 .circle {
-  width: 8px;
+  min-width: 8px;
   height: 8px;
   border-radius: 4px;
   border: 1px solid black;
@@ -165,30 +186,128 @@ h1 {
 .square {
   min-width: 8px;
   height: 8px;
-  background-color: blue;
+  background-color: rgb(0, 119, 255);
 }
 
 .pentagon {
-  min-width: 8px;
+  display: block;
+  width: 8px;
   height: 8px;
   background-color: red;
   clip-path: polygon(50% 0%, 0% 40%, 15% 100%, 85% 100%, 100% 40%);
 }
 
+.circleB {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  border-radius: 7px;
+  border: 1px solid black;
+  background-color: white;
+}
+
+.squareB {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background-color: rgb(0, 119, 255);
+}
+
+.pentagonB {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  background-color: red;
+  clip-path: polygon(50% 0%, 0% 40%, 15% 100%, 85% 100%, 100% 40%);
+}
+
+.triangleB {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  background-color: black;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
 .abilities > h3 {
-  margin-top: 10px;
-  font-size: 0.8em;
-  font-weight: 600;
+  border-top:solid orangered 1px;
+  font-size: 0.7em;
+  font-family: pragatiBold;
   background-color: rgb(161, 158, 158);
   padding:1px;
 }
 
-.abilityNormal {
+.ability{
   padding:1px;
-  font-size: 0.72em;
+  font-size: 0.68em;
 }
 
-.abilitySmall {
+.footer {
+  margin-top: auto;
+  padding: 1px;
+  border-top: 1px solid orangered;
+  font-size: 0.62em;
+  font-family: pragatiBold;
+  background-color: rgb(253, 178, 150);
+  line-height: 90%;
+}
+
+.headerSaedath {
+  display: flex;
+  background-color: rgb(241, 90, 70);
+  font-size: 0.8em;
+  align-items: center;
+  justify-content: center;
+  height: 0.3in;
+}
+
+.abilitySaedath {
+  font-size: 0.7em;
+  line-height: 92%;
+}
+
+.alegoria {
+  font-size: 1.2em;
+  line-height: 100%;
+}
+
+.abilitiesAlegoria > h3 {
+  border-top:solid orangered 1px;
+  font-size: 1.5em;
+  font-family: pragatiBold;
+  background-color: rgb(161, 158, 158);
   padding:1px;
-  font-size: 0.5em;
+  text-align: center;
+}
+
+.headerPsiquic {
+  display: flex;
+  background-color: rgb(52, 120, 245);
+  font-size: 0.8em;
+  align-items: center;
+  justify-content: center;
+  height: 0.3in;
+}
+
+.psiquic {
+  font-size: 1.05em;
+  line-height: 92%;
+}
+
+.headerArdid {
+  display: flex;
+  background-color: rgb(245, 200, 52);
+  font-size: 0.8em;
+  align-items: center;
+  justify-content: center;
+  height: 0.3in;
+}
+
+.headerTactic {
+  display: flex;
+  background-color: rgb(91, 245, 52);
+  font-size: 0.8em;
+  align-items: center;
+  justify-content: center;
+  height: 0.3in;
 }
