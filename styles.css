@@ -30,6 +30,7 @@ body {
   flex-direction: column;
   background-color: white;
   flex-shrink: 0;
+  page-break-inside: avoid;
 }
 
 .header {
@@ -139,7 +140,7 @@ body {
 .tableTitle {
   border-top:solid orangered 1px;
   font-size: 0.7em;
-  background-color: rgb(161, 158, 158);
+  background-color: rgb(180, 175, 175);
 }
 
 .tableTitle > div {
@@ -172,11 +173,12 @@ body {
 }
 
 .tableGrey {
-  background-color: rgb(202, 200, 200);
+  background-color: rgb(230, 227, 227);
 }
 
 .circle {
-  min-width: 8px;
+  display: inline-block;
+  width: 8px;
   height: 8px;
   border-radius: 4px;
   border: 1px solid black;
@@ -184,13 +186,14 @@ body {
 }
 
 .square {
-  min-width: 8px;
+  display: inline-block;
+  width: 8px;
   height: 8px;
   background-color: rgb(0, 119, 255);
 }
 
 .pentagon {
-  display: block;
+  display: inline-block;
   width: 8px;
   height: 8px;
   background-color: red;
@@ -233,7 +236,7 @@ body {
   border-top:solid orangered 1px;
   font-size: 0.7em;
   font-family: pragatiBold;
-  background-color: rgb(161, 158, 158);
+  background-color: rgb(180, 175, 175);
   padding:1px;
 }
 
@@ -254,7 +257,7 @@ body {
 
 .headerSaedath {
   display: flex;
-  background-color: rgb(241, 90, 70);
+  background-color: rgb(243, 113, 96);
   font-size: 0.8em;
   align-items: center;
   justify-content: center;
@@ -275,14 +278,14 @@ body {
   border-top:solid orangered 1px;
   font-size: 1.5em;
   font-family: pragatiBold;
-  background-color: rgb(161, 158, 158);
+  background-color: rgb(180, 175, 175);
   padding:1px;
   text-align: center;
 }
 
 .headerPsiquic {
   display: flex;
-  background-color: rgb(52, 120, 245);
+  background-color: rgb(72, 132, 243);
   font-size: 0.8em;
   align-items: center;
   justify-content: center;
@@ -296,7 +299,7 @@ body {
 
 .headerArdid {
   display: flex;
-  background-color: rgb(245, 200, 52);
+  background-color: rgb(248, 213, 100);
   font-size: 0.8em;
   align-items: center;
   justify-content: center;
@@ -305,9 +308,109 @@ body {
 
 .headerTactic {
   display: flex;
-  background-color: rgb(91, 245, 52);
+  background-color: rgb(132, 247, 103);
   font-size: 0.8em;
   align-items: center;
   justify-content: center;
   height: 0.3in;
+}
+
+.abilitiesPsiquic > h3 {
+  border-top:solid rgb(4, 0, 255) 1px;
+  font-size: 1.5em;
+  font-family: pragatiBold;
+  background-color: rgb(180, 175, 175);
+  padding:1px;
+  text-align: center;
+}
+
+.abilitiesStrategic > h3 {
+  border-top:solid rgb(196, 152, 7) 1px;
+  font-size: 1.5em;
+  font-family: pragatiBold;
+  background-color: rgb(180, 175, 175);
+  padding:1px;
+  text-align: center;
+}
+
+.abilitiesTactic > h3 {
+  border-top:solid rgb(38, 185, 2) 1px;
+  font-size: 1.5em;
+  font-family: pragatiBold;
+  background-color: rgb(180, 175, 175);
+  padding:1px;
+  text-align: center;
+}
+
+.abilitiesEquip > h3 {
+  border-top:solid rgb(112, 2, 185) 1px;
+  font-size: 1.5em;
+  font-family: pragatiBold;
+  background-color: rgb(180, 175, 175);
+  padding:1px;
+  text-align: center;
+}
+
+.headerEquip {
+  display: flex;
+  background-color: rgb(166, 137, 245);
+  font-size: 0.8em;
+  align-items: center;
+  justify-content: center;
+  height: 0.3in;
+}
+
+.abilityEquip {
+  margin: 2px;
+  padding: 2px;
+  border: 1px solid rgb(112, 2, 185);
+}
+
+.equipTitle {
+  width: 100%;
+  display: block;
+  background-color: rgb(204, 195, 228);
+  padding: 1px;
+  margin-bottom: 1px;
+}
+
+.equipFlexTitle {
+  width: 100%;
+  display: flex;
+  background-color: rgb(204, 195, 228);
+  padding: 1px;
+  margin-bottom: 1px;
+  gap: 2px;
+}
+
+.equipFlexRow {
+  display: flex;
+  gap: 2px;
+  width: 100%;
+  padding: 1px;
+  margin-bottom: 1px;
+}
+.equipFlexTitle > span, .equipFlexRow > span {
+  min-width: 15px;
+}
+.izq {
+  margin-right: auto;
+}
+
+.abilitiesOperacionFaccion > h3 {
+  border-top:solid rgb(241, 206, 5) 1px;
+  font-size: 1.5em;
+  font-family: pragatiBold;
+  background-color: rgb(180, 175, 175);
+  padding:1px;
+  text-align: center;
+}
+
+.headerOperacionFaccion {
+  display: flex;
+  background-color: rgb(245, 243, 137);
+  font-size: 0.8em;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
