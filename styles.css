@@ -414,3 +414,68 @@ body {
   justify-content: center;
   text-align: center;
 }
+
+.abilitiesOperacionSD > h3 {
+  border-top:solid rgb(241, 5, 5) 1px;
+  font-size: 1.5em;
+  font-family: pragatiBold;
+  background-color: rgb(180, 175, 175);
+  padding:1px;
+  text-align: center;
+}
+
+.headerOperacionSD {
+  display: flex;
+  background-color: rgb(245, 137, 137);
+  font-size: 0.8em;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.abilitiesOperacionInf > h3 {
+  border-top:solid rgb(10, 10, 10) 1px;
+  font-size: 1.5em;
+  font-family: pragatiBold;
+  background-color: rgb(180, 175, 175);
+  padding:1px;
+  text-align: center;
+}
+
+.headerOperacionInf {
+  display: flex;
+  background-color: rgb(46, 46, 46);
+  font-size: 0.8em;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: aliceblue;
+}
+
+.abilitiesOperacionRec > h3 {
+  border-top:solid rgb(255, 160, 64) 1px;
+  font-size: 1.5em;
+  font-family: pragatiBold;
+  background-color: rgb(180, 175, 175);
+  padding:1px;
+  text-align: center;
+}
+
+.headerOperacionRec {
+  display: flex;
+  background-color: rgb(255, 85, 0);
+  font-size: 0.8em;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.pequeño {
+  font-size: 80%;
+}
+
+.mediano {
+  font-size: 90%;
+}
+
+.pequeñoMas {
+  font-size: 77%;
+}
