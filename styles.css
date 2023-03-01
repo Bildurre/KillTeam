@@ -468,6 +468,44 @@ body {
   justify-content: center;
   text-align: center;
 }
+
+.abilitiesOperacionSeg > h3 {
+  border-top:solid rgb(2, 18, 243) 1px;
+  font-size: 1.5em;
+  font-family: pragatiBold;
+  background-color: rgb(180, 175, 175);
+  padding:1px;
+  text-align: center;
+}
+
+.headerOperacionSeg {
+  display: flex;
+  background-color: rgb(115, 126, 255);
+  font-size: 0.8em;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.headerChuleta {
+  display: flex;
+  background-color: rgb(34, 37, 67);
+  font-size: 0.8em;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: aliceblue;
+}
+
+.chuletaTitle {
+  width: 100%;
+  display: block;
+  background-color: rgb(204, 195, 228);
+  padding: 1px;
+  margin-bottom: 1px;
+}
+
+
 .pequeño {
   font-size: 80%;
 }
@@ -476,6 +514,9 @@ body {
   font-size: 90%;
 }
 
+.medianoMas {
+  font-size: 95%;
+}
 .pequeñoMas {
   font-size: 77%;
 }
